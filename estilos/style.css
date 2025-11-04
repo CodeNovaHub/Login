@@ -1,0 +1,116 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, helvetica, sans-serif;
+}
+body,html {
+    width: 100vw;
+    height: 100vh;
+    background-color:#5e0c00;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#login {
+    background-color: white;
+    width: 270px;
+    height: 530px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px #1f0400c9;
+    transition: .5s;
+}
+div#imagens {
+    height: 200px;
+    background: black url("../imagens/imagem03.png") no-repeat center center;
+    background-size: cover;
+    display: block;
+}
+div#formularios {
+    display: block;
+    padding: 10px;
+}
+div#formularios > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: darkred;
+    font-variant: small-caps;
+    text-shadow: 1px 1px .5px black;
+}
+div#formularios > p {
+    font-size: .9em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+form div.campo i {
+    font-size: 2em;
+    width: 41px;
+    padding: 4px;
+    color: white;
+}
+form div.campo input {
+    width: calc(100% - 45px);
+    height: 100%;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    transform: translateY(-37%);
+    padding: 5px;
+}
+form div.campo {
+    background-color: red;
+    height: 40px;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    margin: 5px 0px;
+    border: 2px solid black;
+}
+form label {
+    display: none;
+}
+form [type="submit"] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: darkred;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: .5s;
+}
+form [type="submit"]:hover {
+    background-color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+form a.botao {
+    display: block;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid red;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    transition: .5s;
+}
+form a.botao:hover {
+    background-color: #d20900;
+    color: white;
+}
+a.botao > i {
+    font-size: 1.2em;
+    padding-left: 5px;
+}
